@@ -20,7 +20,7 @@ body {
     border-radius: 16px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px; /* ✅ 정보 박스와 동일한 최대 폭 */
 }
 
 /* ✅ 로고 스타일 */
@@ -69,14 +69,14 @@ button:hover {
     background: rgba(0, 0, 0, 1);
 }
 
-/* ✅ 정보 박스 */
+/* ✅ 정보 박스 (폭을 메인 컨테이너와 동일하게 설정) */
 .info-box {
     background: rgba(24, 24, 24, 0.8);
     padding: 20px;
     border-radius: 16px;
     margin-top: 20px;
     width: 100%;
-    max-width: 600px;
+    max-width: 600px; /* ✅ 메인 컨테이너와 동일한 최대 폭 */
     box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.44);
 }
 
