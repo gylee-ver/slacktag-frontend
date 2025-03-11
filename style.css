@@ -20,7 +20,7 @@ body {
     width: 100%;
     max-width: 380px; /* ✅ 모바일 크기로 고정 (데스크탑에서도 모바일처럼 보이게) */
     text-align: center;
-    box-sizing: border-box; /* ✅ 패딩이 width를 넘지 않도록 설정 */
+    box-sizing: border-box;
 }
 
 /* ✅ 로고 */
@@ -44,41 +44,42 @@ input {
     border-radius: 12px;
     font-size: 1rem;
     text-align: center;
-    background: rgba(255, 255, 255, 0.2); /* 반투명한 배경 */
+    background: rgba(255, 255, 255, 0.25); /* ✅ 투명도를 살짝 낮춤 */
     color: white;
     outline: none;
     transition: background 0.3s ease, box-shadow 0.3s ease;
     box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
-    box-sizing: border-box; /* ✅ 패딩 포함하여 width 조정 */
+    box-sizing: border-box;
+    margin-bottom: 15px; /* ✅ 엔터 버튼과 자연스럽게 간격 조정 */
 }
 
 /* ✅ 입력 필드 안의 placeholder 스타일 */
 input::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* 더 부드러운 흰색 */
+    color: rgba(255, 255, 255, 0.7); /* 부드러운 흰색 */
     font-size: 0.95rem;
     text-align: center;
 }
 
 /* ✅ 입력 필드 클릭(포커스) 시 강조 효과 */
 input:focus {
-    background: rgba(255, 255, 255, 0.3); /* 밝은 효과 */
+    background: rgba(255, 255, 255, 0.3); /* ✅ 클릭 시 약간 밝게 */
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 
 /* ✅ 버튼 */
 button {
     width: 100%;
-    max-width: 100%; /* ✅ 부모 요소 초과 방지 */
-    padding: 12px;
+    max-width: 100%; /* ✅ 입력 필드와 동일한 크기로 맞춤 */
+    padding: 14px; /* ✅ 버튼 크기 입력 필드와 동일하게 조정 */
     background: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px; /* ✅ 입력 필드와 동일한 모서리 둥글기 */
     cursor: pointer;
     transition: background 0.3s;
-    box-sizing: border-box; /* ✅ 패딩 포함하여 width 조정 */
+    box-sizing: border-box;
 }
 
 button:hover {
@@ -96,7 +97,7 @@ button:hover {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     width: 100%;
     max-width: 100%; /* ✅ 부모 요소 초과 방지 */
-    box-sizing: border-box; /* ✅ 패딩 포함하여 width 조정 */
+    box-sizing: border-box;
 }
 
 /* ✅ 정보 박스 제목 */
