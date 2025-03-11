@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slack 스레드 멤버 태그</title>
+    <title>Slack 스레드 멤버 전체 태그</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
+        <!-- ✅ 로고 이미지 추가 -->
+        <img src="logo.png" alt="SlackTag 로고" class="logo">
+        
         <h1>Slack 스레드 멤버 전체 태그</h1>
-        <input type="text" id="messageLink" placeholder='이 곳에 복사한 "메시지 링크"를 붙여넣기 해주세요.'>
+        <input type="text" id="messageLink" placeholder="메시지 링크를 입력하세요">
         <button id="submit">Enter</button>
         <p id="response"></p>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
