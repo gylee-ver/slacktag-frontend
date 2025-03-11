@@ -38,7 +38,7 @@ h1 {
 /* ✅ 입력 필드 스타일 개선 */
 input {
     width: 100%;
-    max-width: 100%; /* ✅ 부모 요소 초과 방지 */
+    max-width: 100%;
     padding: 14px;
     border: none;
     border-radius: 12px;
@@ -55,35 +55,42 @@ input {
 
 /* ✅ 입력 필드 안의 placeholder 스타일 */
 input::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* 부드러운 흰색 */
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
     text-align: center;
 }
 
 /* ✅ 입력 필드 클릭(포커스) 시 강조 효과 */
 input:focus {
-    background: rgba(255, 255, 255, 0.3); /* ✅ 클릭 시 약간 밝게 */
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 
-/* ✅ 버튼 */
+/* ✅ Enter 버튼 반응형 */
 button {
     width: 100%;
     max-width: 100%; /* ✅ 입력 필드와 동일한 크기로 맞춤 */
-    padding: 14px; /* ✅ 버튼 크기 입력 필드와 동일하게 조정 */
+    padding: 14px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    border-radius: 12px; /* ✅ 입력 필드와 동일한 모서리 둥글기 */
+    border-radius: 12px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.1s ease-in-out; /* ✅ 색상 변화 + 클릭 효과 추가 */
     box-sizing: border-box;
 }
 
+/* ✅ 데스크탑: 마우스 호버 시 부드럽게 반전 */
 button:hover {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* ✅ 데스크탑 & 모바일: 클릭 시 버튼이 눌리는 느낌 */
+button:active {
+    transform: scale(0.95); /* ✅ 클릭 시 약간 축소 */
 }
 
 /* ✅ 정보 박스 */
@@ -96,7 +103,7 @@ button:hover {
     font-size: 0.9rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     width: 100%;
-    max-width: 100%; /* ✅ 부모 요소 초과 방지 */
+    max-width: 100%;
     box-sizing: border-box;
 }
 
