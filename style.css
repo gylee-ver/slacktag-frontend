@@ -1,0 +1,30 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient(90deg, #161616, #999999);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.container {
+    text-align: center;
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 20px;
+    background: #e5e5e5;
+    border: none;
+    cursor: pointer;
+}
