@@ -34,15 +34,32 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* ✅ 입력 필드 */
+/* ✅ 입력 필드 스타일 개선 */
 input {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 1rem;
-    margin-bottom: 10px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* 반투명한 배경 */
+    color: white;
+    outline: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ 입력 필드 안의 placeholder 스타일 */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* 더 부드러운 흰색 */
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* ✅ 입력 필드 클릭(포커스) 시 강조 효과 */
+input:focus {
+    background: rgba(255, 255, 255, 0.3); /* 밝은 효과 */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
 }
 
 /* ✅ 버튼 */
@@ -72,13 +89,17 @@ button:hover {
     text-align: left;
     font-size: 0.9rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 380px; /* ✅ 메인 컨테이너와 동일한 크기 유지 */
 }
 
+/* ✅ 정보 박스 제목 */
 .info-box h2 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
+/* ✅ 정보 박스 목록 스타일 */
 .info-box ul {
     list-style-type: none;
     padding: 0;
@@ -101,7 +122,7 @@ button:hover {
 
 /* ✅ 모바일 반응형 (데스크탑에서도 모바일 스타일 유지) */
 @media (min-width: 600px) {
-    .mobile-container {
+    .mobile-container, .info-box {
         max-width: 380px;
     }
 }
