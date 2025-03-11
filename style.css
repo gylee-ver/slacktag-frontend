@@ -35,16 +35,16 @@ h1 {
     margin-bottom: 15px;
 }
 
-/* ✅ 입력 필드 스타일 개선 */
+/* ✅ 입력 필드 스타일 개선 (높이 줄임) */
 input {
     width: 100%;
     max-width: 100%;
-    padding: 14px;
+    padding: 10px; /* ✅ 높이를 더 얇게 조정 */
     border: none;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     text-align: center;
-    background: rgba(255, 255, 255, 0.25); /* ✅ 투명도를 살짝 낮춤 */
+    background: rgba(255, 255, 255, 0.25);
     color: white;
     outline: none;
     transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -56,7 +56,7 @@ input {
 /* ✅ 입력 필드 안의 placeholder 스타일 */
 input::placeholder {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-align: center;
 }
 
@@ -69,8 +69,8 @@ input:focus {
 /* ✅ Enter 버튼 반응형 */
 button {
     width: 100%;
-    max-width: 100%; /* ✅ 입력 필드와 동일한 크기로 맞춤 */
-    padding: 14px;
+    max-width: 100%;
+    padding: 12px; /* ✅ 버튼과 입력 필드의 높이 균형 맞춤 */
     background: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 1rem;
@@ -78,7 +78,7 @@ button {
     border: none;
     border-radius: 12px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.1s ease-in-out; /* ✅ 색상 변화 + 클릭 효과 추가 */
+    transition: background 0.3s, transform 0.1s ease-in-out;
     box-sizing: border-box;
 }
 
@@ -90,7 +90,7 @@ button:hover {
 
 /* ✅ 데스크탑 & 모바일: 클릭 시 버튼이 눌리는 느낌 */
 button:active {
-    transform: scale(0.95); /* ✅ 클릭 시 약간 축소 */
+    transform: scale(0.95);
 }
 
 /* ✅ 정보 박스 */
