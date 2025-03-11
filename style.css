@@ -20,6 +20,7 @@ body {
     width: 100%;
     max-width: 380px; /* ✅ 모바일 크기로 고정 (데스크탑에서도 모바일처럼 보이게) */
     text-align: center;
+    box-sizing: border-box; /* ✅ 패딩이 width를 넘지 않도록 설정 */
 }
 
 /* ✅ 로고 */
@@ -37,6 +38,7 @@ h1 {
 /* ✅ 입력 필드 스타일 개선 */
 input {
     width: 100%;
+    max-width: 100%; /* ✅ 부모 요소 초과 방지 */
     padding: 14px;
     border: none;
     border-radius: 12px;
@@ -47,6 +49,7 @@ input {
     outline: none;
     transition: background 0.3s ease, box-shadow 0.3s ease;
     box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.1);
+    box-sizing: border-box; /* ✅ 패딩 포함하여 width 조정 */
 }
 
 /* ✅ 입력 필드 안의 placeholder 스타일 */
@@ -65,6 +68,7 @@ input:focus {
 /* ✅ 버튼 */
 button {
     width: 100%;
+    max-width: 100%; /* ✅ 부모 요소 초과 방지 */
     padding: 12px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
@@ -74,6 +78,7 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s;
+    box-sizing: border-box; /* ✅ 패딩 포함하여 width 조정 */
 }
 
 button:hover {
@@ -90,7 +95,8 @@ button:hover {
     font-size: 0.9rem;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
     width: 100%;
-    max-width: 380px; /* ✅ 메인 컨테이너와 동일한 크기 유지 */
+    max-width: 100%; /* ✅ 부모 요소 초과 방지 */
+    box-sizing: border-box; /* ✅ 패딩 포함하여 width 조정 */
 }
 
 /* ✅ 정보 박스 제목 */
