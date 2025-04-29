@@ -23,6 +23,21 @@ body {
     box-sizing: border-box;
 }
 
+/* ✅ 카드 스타일 */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
 /* ✅ 로고 */
 .logo {
     width: 120px;
@@ -80,6 +95,11 @@ button {
     cursor: pointer;
     transition: background 0.3s, transform 0.1s ease-in-out;
     box-sizing: border-box;
+}
+
+/* ✅ 하단 카드 버튼 스타일 */
+#submitUnreacted {
+    background: rgba(244, 67, 54, 0.8);
 }
 
 /* ✅ 데스크탑: 마우스 호버 시 부드럽게 반전 */
