@@ -14,7 +14,7 @@ document.getElementById("submit").addEventListener("click", async () => {
         submitButton.disabled = true;
         responseElement.innerText = "처리 중...";
         
-        const response = await fetch("https://slacktag-backend.onrender.com/tag-all-members", {
+        const response = await fetch("https://slacktag-backend.onrender.com/tag-members", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ messageLink })
